@@ -1,0 +1,23 @@
+.main {
+    margin: 100px;
+}
+
+.main_title {
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+}
+
+.main_data {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+}
+
+.main_button {
+    width: 100%;
+    max-width: 190px;
+    background-color: #13c98a;
+
+    &:hover {
+        background-color: #2e09b6;
+    }
+}

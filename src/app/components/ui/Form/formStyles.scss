@@ -1,0 +1,32 @@
+.form_group {
+    margin-bottom: 16px;
+
+    &:last-of-type {
+        margin-bottom: 24px;
+    }
+}
+
+.form_actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_actions__reset {
+    width: 100%;
+    max-width: 130px;
+    background-color: #bdbdbd;
+
+    &:hover {
+        background-color: #2e09b6;
+    }
+}
+
+.form_actions__submit {
+    width: 100%;
+    max-width: 190px;
+    background-color: #13c98a;
+
+    &:hover {
+        background-color: #2e09b6;
+    }
+}

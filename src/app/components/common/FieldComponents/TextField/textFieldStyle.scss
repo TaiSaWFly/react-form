@@ -1,0 +1,78 @@
+.text_field__wrap {
+    position: relative;
+}
+
+.text_field {
+    background-position: right 16px center;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    z-index: 10;
+
+    &.dirty {
+        padding: 2.2rem 1.6rem 1rem 1.6rem;
+        background-color: transparent;
+
+        & + .text_field__label {
+            font-size: 1.1rem;
+            top: 8px;
+        }
+    }
+
+    &.invalid {
+        background-image: url("../../../../../assets/Icons/preduprezdenie.svg");
+        border-color: #f8478d;
+        padding-right: 45px;
+    }
+
+    &.valid {
+        background-image: url("../../../../../assets/Icons/ok.svg");
+        border-color: #13c98a;
+        padding-right: 45px;
+    }
+
+    &.invalid:hover ~ .text_field__error {
+        display: block;
+    }
+}
+
+.text_field__label {
+    margin-bottom: 0;
+    font-family: "LetoSans", sans-serif;
+    font-size: 1.4rem;
+    color: #9b99aa;
+
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    z-index: 1;
+}
+
+.text_field__error {
+    display: none;
+    width: auto;
+    margin-top: 0;
+    padding: 1rem 1.5rem;
+
+    font-size: 1.2rem;
+    color: #fff;
+
+    background-color: #333333;
+    border-radius: 6px;
+
+    position: absolute;
+    top: calc(-100% + 4px);
+    z-index: 20;
+
+    &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+
+        background-color: #333333;
+
+        position: absolute;
+        bottom: -5px;
+        left: 15px;
+        transform: rotate(45deg);
+    }
+}

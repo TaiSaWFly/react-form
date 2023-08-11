@@ -1,0 +1,18 @@
+.edit_form_page {
+    display: flex;
+    height: 100vh;
+    background-color: #474747;
+}
+
+.edit_form_page__wrap {
+    margin: auto;
+    width: 100%;
+    max-width: 385px;
+    padding: 24px 24px 32px 24px;
+    background-color: #fff;
+}
+
+.edit_form__title {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+}
